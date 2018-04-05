@@ -23,12 +23,20 @@
         "eslint-config-airbnb-base": "~12.1.0",
         "eslint-plugin-import": "~2.10.0",
         "husky": "~0.14.3",
-        "mocha": "~5.0.5"
+        "lint-staged": "~7.0.4",
+        "mocha": "~5.0.5",
+        "prettier": "1.11.1"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn lint",
+            "pre-commit": "yarn lint && lint-staged",
             "pre-push": "yarn test"
         }
+    },
+    "lint-staged": {
+        "*.{js,json,css,md}": [
+            "prettier --write",
+            "git add"
+        ]
     }
 }
