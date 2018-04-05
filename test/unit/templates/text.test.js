@@ -1,4 +1,4 @@
-import Text from '../../src/templates/text';
+import Text from '../../../src/templates/text';
 
 describe('Text message', () => {
     it('should throw expected error if text is not passed', () => {
