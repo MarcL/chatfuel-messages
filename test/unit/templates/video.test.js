@@ -14,6 +14,14 @@ describe('Video message', () => {
         expect(functionWrapper).to.throw('Url must point to an MP4 file');
     });
 
+    it('should not throw an error if url is an mp4', () => {
+        const invalidUrl = 'https://invalid.url/test.mp4';
+        const functionWrapper = () => new Video(invalidUrl).get();
+
+        // eslint-disable-next-line no-unused-expressions
+        expect(functionWrapper).to.throw;
+    });
+
     it('should return expected video response', () => {
         const givenUrl = 'https://given.url/test.mp4';
         const imageMessage = new Video(givenUrl)
