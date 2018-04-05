@@ -1,6 +1,6 @@
 {
     "name": "chatfuel-messages",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Message builder for Chatfuel messages",
     "main": "lib/index.js",
     "repository": "git@github.com:MarcL/chatfuel-messages.git",
