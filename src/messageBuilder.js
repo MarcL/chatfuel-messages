@@ -1,6 +1,6 @@
 import BaseTemplate from './templates/baseTemplate';
 
-class Response extends BaseTemplate {
+class MessageBuilder extends BaseTemplate {
     addMessage(message) {
         if (!this.template.messages) {
             this.template.messages = [];
@@ -12,4 +12,4 @@ class Response extends BaseTemplate {
     }
 }
 
-export default Response;
+export default MessageBuilder;

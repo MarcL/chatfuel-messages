@@ -1,6 +1,6 @@
 import Audio from './templates/audio';
 import Image from './templates/image';
 import Text from './templates/text';
-import Response from './response';
+import MessageBuilder from './messageBuilder';
 
-export { Audio, Image, Text, Response };
+export { Audio, Image, MessageBuilder, Text };
