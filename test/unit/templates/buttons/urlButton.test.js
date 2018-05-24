@@ -1,6 +1,6 @@
 import UrlButton from '../../../../src/templates/buttons/urlButton';
 
-describe.only('URL button', () => {
+describe('URL button', () => {
     const defaultText = 'defaultText';
 
     it('should throw expected error if title is not passed', () => {
